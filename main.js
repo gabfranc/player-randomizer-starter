@@ -1,6 +1,6 @@
 "use strict";
 
-const players = [{name: "newt", turnPosition: null }, {name: "ripley", turnPosition: null}, {name: "apone", turnPosition: null}, {name: "hicks", turnPosition: null}];
+const characters = [{character: "Rikki", turnPosition: null }, {character: "Cleo", turnPosition: null}, {character: "Emma", turnPosition: null}, {character: "Bella", turnPosition: null}];
 
 let turnOrder = []
 
