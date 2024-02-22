@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Player Randomizer</title>
-    <script type="module" src="main.js"></script>
-  </head>
-  <body>
-    <main>
-      <h1>Players</h1>
-      <div>
-        <!-- Print out players in their original order here -->
-        <ul id="players-list">
-        </ul>
-      </div>
-      <div>
-        
-        <button id="random-player-btn">Randomize Player Order</button>
-      </div>
-      <div>
-        <h2>Player Turn Order</h2>
-        <ol id="player-turn-order">
-        </ol>
-      </div>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <title>LOOPS JS</title>
+  <script type="module" src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'purple': '#d1bce3',
+            'pink': '#f4cae0',
+            'pink-light': '#f7c1bb',
+            'pink-dark': '#d36582',
+            'blue': '#253c78',
+            'black': '#1e1a1d',
+          },
+
+          screens: {
+            '1': '570px',
+            '2': '768px',
+            '3': '1024px',
+            '4': '1280px',
+            '5': '1536px',
+          },
+
+          text: {
+            'sm':'16',
+            'lg': '24',
+            'xl': '36',
+            '2xl': '56',
+            '3xl':'64',
+          },
+
+          spacing: {
+            'm': '5vh',
+            'p': '15vh',
+          }
+
+
+        }
+      }
+    }
+  </script>
+</head>
+<body class="justify-center align-center text-center flex-column bg-pink-light">
+  <main class="text-blue font-bold py-16 mt-12">
+    <h1 class="font-bold text-2xl">h2o characters</h1>
+    <div class="text-lg mt-16">
+      <ul id="players-list" class=" text-black font-bold text-blue ">
+      </ul>
+    </div>
+    <div>
+      <button id="random-player-btn" class="justify-center rounded bg-pink-dark hover:bg-purple active:bg-pink h-12 w-24 mt-16 text-black font-bold">Random</button>
+    </div>
+    <div id="players-turn-order" class="pt-8 mt-8"></div>
+  </main>
+</body>
 </html>
